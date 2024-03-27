@@ -1,6 +1,6 @@
-package com.example.demo.user;
+package com.example.demo.model.user;
 
-import com.example.demo.token.Token;
+import com.example.demo.model.token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

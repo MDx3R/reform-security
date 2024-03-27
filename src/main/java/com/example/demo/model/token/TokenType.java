@@ -1,4 +1,4 @@
-package com.example.demo.token;
+package com.example.demo.model.token;
 
 public enum TokenType {
     ACCESS,

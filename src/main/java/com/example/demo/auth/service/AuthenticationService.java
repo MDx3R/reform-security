@@ -1,16 +1,17 @@
-package com.example.demo.auth;
+package com.example.demo.auth.service;
 
-import com.example.demo.config.JwtService;
-import com.example.demo.token.Token;
-import com.example.demo.token.TokenRepository;
-import com.example.demo.token.TokenType;
-import com.example.demo.user.Role;
-import com.example.demo.user.User;
-import com.example.demo.user.UserRepository;
+import com.example.demo.auth.dto.request.LoginRequest;
+import com.example.demo.auth.dto.request.RegisterRequest;
+import com.example.demo.auth.dto.response.AuthenticationResponse;
+import com.example.demo.model.token.Token;
+import com.example.demo.model.token.TokenRepository;
+import com.example.demo.model.token.TokenType;
+import com.example.demo.model.user.Role;
+import com.example.demo.model.user.User;
+import com.example.demo.model.user.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
